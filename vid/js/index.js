@@ -1,8 +1,16 @@
+/*$(document).ready(function(){
+  $('video').get(1).play()
+})*/
+
+
 var minWidth = 300;
 var videoWidth;
 var videoHeight;
 
 $(function() {
+  
+  
+
 
     videoWidth = parseInt($('video').attr('width'));
     videoHeight = parseInt($('video').attr('height'));
