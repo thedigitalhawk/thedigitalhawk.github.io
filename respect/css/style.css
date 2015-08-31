@@ -1,0 +1,22 @@
+body{
+  background:#3A539B;
+  color:#eee;
+  
+  font-family: 'Roboto', sans-serif;
+}
+#main{
+  font-size:3em;
+  text-align:center;
+  line-height:3.5em;
+  font-family: 'Pacifico', cursive;
+}
+#content{
+    width: 90%;
+    margin:0 auto;
+    background:#fff;
+    box-sizing:border-box;
+  padding:20px;
+  color:#222;
+  font-size:16px;
+  line-height:24px;
+}
