@@ -8,7 +8,11 @@ body{
   font-size:3em;
   text-align:center;
   line-height:3.5em;
-  font-family: 'Pacifico', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+#main h1 span{
+font-weight: 700;
 }
 #content{
     width: 90%;
