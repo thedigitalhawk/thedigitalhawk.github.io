@@ -1,71 +1,178 @@
+
+
 html,body{
   width: 100%;
   height: 100%;
 }
 body{
-  background-color:#201625;
   font-style:16px;
+
 }
-#videoContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-#container{
-  max-width:100%;
-  width: 1240px;
+#background{
+  position:fixed;
+  width: 100%;
   height: 100%;
-  margin:0 auto;
+  top:0;
+  left:0;
+}
+
+
+header{
+  padding: 40px 0px 0px;
+  height: 50px;
   position:relative;
   z-index: 2;
 }
-header{
-  padding: 40px 0px;
-  height: 102px;
-}
+/* header a{
+  color:#201625;
+  text-decoration:none;
+  font:300 0.8em 'Poppins', sans-serif;
+  display:block;
+  float:right;
+  border:1px solid #201625;
+  padding:10px 15px;
+  border-radius:30px 30px 30px 0px;
+} */
 svg{
-  position:absolute;
-  top:0;
-  left:0;
-  z-index: 0;
-  width: 100%;
-  box-sizing:border-box;
-  padding:50px;
-    top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
+  height: 50px;
 }
 .heroImage{
   position:relative;
   width: 100%;
-  height: 100%;
-  background:rgba(32, 22, 37, 0.7);
+  height: calc(80% - 90px);
+  color:#333;
   z-index: 2;
 }
+
+
+/* .heroImage:after {
+  transform: rotate(-2deg);
+  right: 10px;
+  left: auto;
+} */
 .heroImage .content{
-  width: 100%;
+  max-width: 1240px;
+  width: 95%;
   position:absolute;
-  top:50%;
+  top:calc(50% + 15px);
   left:50%;
   transform:translate(-50%, -50%);
 }
+.headerTextBlock{
+  width: 100%;
+  max-width:500px;
+}
 h1{
-  text-align:center;
-  color:#eee;
-  font:300 4em 'Poppins', sans-serif;
+  font:300 2em 'Poppins', sans-serif;
 }
 h1 span{
   font-weight:600;
 }
+.container_content{
+  width: 100%;
+  background:#eee;
+  padding:40px 0px;
+  position:relative;
+}
+h2{
+  color:#201625;
+  font:300 1.2em 'Poppins', sans-serif;
+  margin-bottom:40px;
+}
+
+.card{
+  width: 100%;
+  height: 400px;
+  background:#fff;
+  margin-bottom:2em;
+}
+
+.cardLeft,.cardRight{
+  position:relative;
+  width: 50%;
+  height: 100%;
+  float:left;
+}
+.cardLeft img,.cardRight img{
+  width: 100%;
+}
+.cardLeft div,.cardRight div{
+  height: 100%;
+  width: 100%;
+}
+.cardLeft div iframe,.cardRight div iframe{
+  height: 100%;
+  width: 100%;
+}
+.card.odd .cardRight:after{
+      position : absolute;
+    left:-20px;
+    content:"";
+    width:0;
+    height:0;
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent;
+    border-right:20px solid #5D31C6;
+  top:50%;
+  transform:translateY(-50%);
+  z-index: 10;
+}
+.card.even .cardLeft:after{
+      position : absolute;
+    right:-20px;
+    content:"";
+    width:0;
+    height:0;
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent;
+    border-left:20px solid #5D31C6;
+  top:50%;
+  transform:translateY(-50%);
+  z-index: 10;
+}
+.card.odd .cardRight{
+  background-color:#5D31C6;
+  color:#fff;
+   font:300 1em 'Poppins', sans-serif;
+  box-sizing:border-box;
+  padding:6%;
+}
+.card.even .cardLeft{
+  background-color:#5D31C6;
+  color:#fff;
+   font:300 1em 'Poppins', sans-serif;
+  box-sizing:border-box;
+  padding:6%;
+}
+
+.card.odd .cardRight h3,.card.even .cardLeft h3{
+  font:400 1.5em 'Poppins', sans-serif;
+}
+
+.card.last{
+  margin:0;
+}
+.inner{
+  max-width: 1240px;
+  width: 95%;
+  margin:0 auto;
+}
+.button{
+  position:relative;
+  overflow:hidden;
+  transition:all 0.2s;
+}
+.button:hover{
+background:#2ba096;
+  color:#fff;
+}
 .heroImage p{
-  text-align:center;
-  color:#eee;
-  font:300 1em 'Poppins', sans-serif;
+  font:300 1.4em 'Poppins', sans-serif;
   line-height:2em;
+}
+.heroImage p span{
+  font-weight:500;
+  color:#5D31C6;
 }
 .heroImage hr{
   width: 200px;
@@ -74,28 +181,28 @@ h1 span{
   margin-bottom:20px;
 }
 .share{
-  height: 20px;
-  width: 203px;
-  margin:0 auto;
-  margin-top:20px;
-  font-size:24px;
-  line-height:40px;
-  color:#eee;
+  height: 50px;
+  width: 170px;
+  font-size:20px;
+  float:right;
 }
 .share a{
-  color:#eee;
+  color:#fff;
   display:inline-block;
-  width: 50px;
-  height: 40px;
-/*   background:#000; */
-  line-height:40px;
+  width: 35px;
+  height: 35px;
+  background:#5D31C6;
+  border-radius:100%;
+  line-height:35px;
   text-align:center;
   margin:0;
-  border-right:1px solid #eee;
+  margin-right:10px;
+
 }
 .share a:last-of-type{
   border:0;
   padding:0;
+  margin:0;
 }
 .share a:hover{
     color: #8981f3;
@@ -103,7 +210,7 @@ h1 span{
 }
 @media screen and (max-width: 480px) {
   body{
-    font-size:8px;
+   font-size:10px;
   }
   .heroImage hr{
     border:0px solid #eee;
@@ -112,4 +219,29 @@ h1 span{
   .heroImage p{
     font-size:2em;
   }
+  h2{
+    font-size:1.8em;
+  }
+  .cardLeft, .cardRight {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    float: none;
 }
+  .heroImage .content {
+    top: calc(50% + 30px);
+}
+  .card.odd .cardRight {
+    font-size:1.3em;
+  }
+    .card.even .cardLeft {
+    font-size:1.3em;
+  }
+  .cardLeft:after, .cardRight:after {
+    display:none;
+  }
+  .heroImage{
+    height: calc(90% - 90px);
+}
+}
+
