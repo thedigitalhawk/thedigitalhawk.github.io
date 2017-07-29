@@ -34,15 +34,27 @@ header{
   border-radius:30px 30px 30px 0px;
 } */
 svg{
-  height: 50px;
+  height: 125px;
 }
 .heroImage{
   position:relative;
   width: 100%;
   height: calc(80% - 90px);
-  color:#333;
+  color:#fff;
   z-index: 2;
+      background: #000;
+   animation: pageStart 1s forwards; 
 }
+
+@keyframes pageStart {
+    from {-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);}
+    to { -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);}
+}
+  @-webkit-keyframes pageStart {
+    from {-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);}
+    to { -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);}
+}
+
 
 
 /* .heroImage:after {
@@ -70,7 +82,6 @@ h1 span{
 }
 .container_content{
   width: 100%;
-  background:#eee;
   padding:40px 0px;
   position:relative;
 }
@@ -172,7 +183,9 @@ background:#2ba096;
 }
 .heroImage p span{
   font-weight:500;
-  color:#5D31C6;
+  color:#000;
+  background:#fff;
+  padding:0 5px;
 }
 .heroImage hr{
   width: 200px;
@@ -191,7 +204,7 @@ background:#2ba096;
   display:inline-block;
   width: 35px;
   height: 35px;
-  background:#5D31C6;
+  /* background:#5D31C6; */
   border-radius:100%;
   line-height:35px;
   text-align:center;
@@ -205,7 +218,7 @@ background:#2ba096;
   margin:0;
 }
 .share a:hover{
-    color: #8981f3;
+    /* color: #8981f3; */
     transition: all 0.2s linear;
 }
 @media screen and (max-width: 480px) {
@@ -244,4 +257,7 @@ background:#2ba096;
     height: calc(90% - 90px);
 }
 }
+
+
+
 
