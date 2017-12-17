@@ -1,172 +1,190 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
-@import 'reset.css';
-@import 'animations.css';
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900");
+@import "reset.css";
+@import "animations.css";
 
-html,body{
-  width: 100%;
-  height: 100%;
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
-body{
-  font-style:16px;
-  background:#eee;
+body {
+    font-style: 16px;
+    background: #eee;
 }
-h1{
-  font:300 2em 'Poppins', sans-serif;
+h1 {
+    font: 300 2em "Poppins", sans-serif;
 }
-h1 span{
-  font-weight:600;
+h1 span {
+    font-weight: 600;
 }
-h2{
-  color:#201625;
-  font:300 1.2em 'Poppins', sans-serif;
-  margin-bottom:40px;
+h2 {
+    color: #201625;
+    font: 300 1.2em "Poppins", sans-serif;
+    margin-bottom: 40px;
 }
-.section-heading{
-  text-align: center;
-  font-weight: 500;
+.section-heading {
+    text-align: center;
+    font-weight: 500;
 }
-#background{
-  position:fixed;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-}
-
-header{
-  padding: 40px 0px 0px;
-  height: 50px;
-  position:relative;
-  z-index: 2;
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
-svg{
-  height: 125px;
+header {
+    padding: 40px 0px 0px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+svg {
+    height: 80px;
+}
+nav {
+    float: right;
+    font: 600 0.9em "Poppins", sans-serif;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    padding:0.2em 0.8em; 
+}
+nav a:hover{
+  background:#000;
+  color:#fff;
+  transition:all 0.2s;
 }
 /* TOP SECTION */
-.top-section{
-  position:relative;
-  width: 100%;
-  height: calc(80% - 90px);
-  color:#222222;
-  z-index: 2;
-      background: #fff;
-   animation: pageStart 1s forwards; 
+.top-section {
+    position: relative;
+    width: 100%;
+    height: calc(80% - 90px);
+    color: #222222;
+    z-index: 2;
+    background: #fff;
+    animation: pageStart 1s forwards;
 }
-.top-section .content{
-  max-width: 1240px;
-  width: 95%;
-  position:absolute;
-  top:calc(50% + 15px);
-  left:50%;
-  transform:translate(-50%, -50%);
+.top-section .content {
+    max-width: 1240px;
+    width: 90%;
+    position: absolute;
+    top: calc(50% + 15px);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.top-section p{
-  font:300 1.4em 'Poppins', sans-serif;
-  line-height:2em;
-  opacity: 0.9;
+.top-section p {
+    font: 300 1.4em "Poppins", sans-serif;
+    line-height: 2em;
+    opacity: 0.9;
 }
-.top-section h1{
-  font:400 2em 'Poppins', sans-serif;
-  line-height:2em;
+.top-section h1 {
+    font: 400 2em "Poppins", sans-serif;
+    line-height: 2em;
 }
-.top-section h1 span{
-  font-weight:600;
-  /* color:#fff; */
-  /* background:#eee; */
-  padding:0 0.2em;
+.top-section h1 span {
+    font-weight: 600;
 }
-.top-section hr{
-  width: 200px;
-  border: 2px solid #eee;
-  border-radius:10px;
-  margin-bottom:20px;
+.top-section hr {
+    width: 200px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.headerTextBlock{
-  width: 100%;
-  max-width:450px;
+.headerTextBlock {
+    width: 100%;
+    max-width: 450px;
+}
+.headerTextBlock a{
+  display: inline-block;
+  color:rgb(53, 155, 252);
+  text-decoration: none;
 }
 
-.worked-on{
-  width: 100%;
-  padding:40px 0px;
-  position:relative;
+.headerTextBlock a:hover{
+  text-decoration: underline;
+  transition:all 0.2s;
 }
 
-.inner{
-  max-width: 1240px;
-  width: 95%;
-  margin:0 auto;
+.worked-on {
+    width: 100%;
+    padding: 40px 0px;
+    position: relative;
 }
 
-.share{
-  height: 50px;
-  width: 170px;
-  font-size:20px;
-  float:right;
+.inner {
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto;
 }
-.share a{
-  color:#fff;
-  display:inline-block;
-  width: 35px;
-  height: 35px;
-  /* background:#5D31C6; */
-  border-radius:100%;
-  line-height:35px;
-  text-align:center;
-  margin:0;
-  margin-right:10px;
 
+.share {
+    position: absolute;
+    right: 0;
+    width: 30px;
 }
-.share a:last-of-type{
-  border:0;
-  padding:0;
-  margin:0;
+.share a {
+    display: block;
+    text-align: center;
+    background: #808080;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 10px;
 }
-.share a:hover{
-    /* color: #8981f3; */
+.share a:last-of-type {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.share a:hover {
+    background:#000;
     transition: all 0.2s linear;
 }
 
-
 @media screen and (max-width: 480px) {
-  body{
-   font-size:10px;
-  }
-  .top-section hr{
-    border:0px solid #eee;
-    border:1px solid #eee;
-  }
-  .top-section p{
-    font-size:2em;
-  }
-  h2{
-    font-size:1.8em;
-  }
-  .cardLeft, .cardRight {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    float: none;
-}
-  .top-section .content {
-    top: calc(50% + 30px);
-}
-  .card.odd .cardRight {
-    font-size:1.3em;
-  }
+    body {
+        font-size: 10px;
+    }
+    .top-section hr {
+        border: 0px solid #eee;
+        border: 1px solid #eee;
+    }
+    .top-section p {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .cardLeft,
+    .cardRight {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        float: none;
+    }
+    .top-section .content {
+        top: calc(50% + 30px);
+    }
+    .card.odd .cardRight {
+        font-size: 1.3em;
+    }
     .card.even .cardLeft {
-    font-size:1.3em;
-  }
-  .cardLeft:after, .cardRight:after {
-    display:none;
-  }
-  .top-section{
-    height: calc(90% - 90px);
+        font-size: 1.3em;
+    }
+    .cardLeft:after,
+    .cardRight:after {
+        display: none;
+    }
+    .top-section {
+        height: calc(90% - 90px);
+    }
 }
-}
-
-
-
-
