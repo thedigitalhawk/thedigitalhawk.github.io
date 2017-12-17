@@ -1,0 +1,8 @@
+@keyframes pageStart {
+    from {-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);}
+    to { -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);}
+}
+  @-webkit-keyframes pageStart {
+    from {-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);}
+    to { -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);}
+}
