@@ -9,13 +9,13 @@ body {
 }
 body {
     font-style: 16px;
-    background: #eee;
+    background: #222;
 }
 h1 {
     font: 300 2em "Poppins", sans-serif;
 }
 h1 span {
-    font-weight: 600;git
+    font-weight: 600;
 }
 h2 {
     color: #201625;
@@ -43,28 +43,25 @@ header {
 
 
 #logo{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 #logo .st0{
-    fill:#fff
+    fill:#ff0000
 }
 
 #logo .st1{
-    fill:#fff
+    fill:#ff0000
 }
 
 
 nav {
     float: right;
     font: 600 0.9em "Poppins", sans-serif;
-    opacity: 0;
-    animation: fadeDown 0.5s forwards;
-    position: relative;
 }
 nav a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     text-align: center;
     padding: 0.2em 0.8em;
@@ -81,64 +78,9 @@ nav a:hover {
     height: calc(80% - 90px);
     color: #fff;
     z-index: 2;
-    /* background: #313de2; */
     background: #000;
-    /* background-image: url('/images/IMG_00054.png'); */
-    background-size:cover;
-    background-position: center;
-    animation: pageStart 0.5s forwards;
+    animation: pageStart 1s forwards;
 }
-.background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size:105%;
-    background-position: center center;
-    background-image: url('/images/bottom_layer.png');
-    opacity: 0;
-    animation: pageStart 0.5s forwards, fadeIn 1s 0.5s forwards,backgroundBottom 15s 0.5s infinite;
-}
-.background:before{
-    content:'';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    background-size:105%;
-    background-position: center center;
-    background-image: url('/images/middle_layer.png');
-    animation: backgroundMiddle 15s 0.5s infinite;
-}
-.background:after{
-    content:'';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    background-size:105%;
-    background-position: center center;
-    background-image: url('/images/top_layer.png');
-    animation: backgroundTop 15s 0.5s infinite;
-}
-
-.top-section.scrolled{
-    width: 50px;
-    height: 50px;
-    transition: all 0.2s;
-    border-radius:100%;
-    animation: none;
-    position: relative;
-    left:50%;
-}
-
-.top-section.scrolled *{
-    display: none;
-} 
-
 .top-section .content {
     max-width: 1240px;
     width: 90%;
@@ -177,7 +119,7 @@ nav a:hover {
 }
 .headerTextBlock a {
     display: inline-block;
-    color: #888;
+    color: rgb(53, 155, 252);
     text-decoration: none;
 }
 
@@ -206,14 +148,13 @@ nav a:hover {
 .share a {
     display: block;
     text-align: center;
-    background: #fff;
+    background: #222;
     border-radius: 100%;
     height: 30px;
     width: 30px;
     box-sizing: border-box;
     line-height: 30px;
-    /* color: #313de2; */
-    color: #888;
+    color: #fff;
     margin-bottom: 10px;
     position: relative;
     opacity: 0;
@@ -236,7 +177,7 @@ nav a:hover {
     margin: 0;
 }
 .share a:hover {
-    color: #313de2;
+    background: #000;
     transition: all 0.2s linear;
 }
 
