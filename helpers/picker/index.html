@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - PICKER</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="namepicker">
+      <h2>Random Name Picker</h2>
+      <input id="names" type="text" placeholder="Enter names followed by a ‘ , ‘">
+      <button id="choose">Roll</button>
+  </div>
+
+  <div class="peopleCycle">
+      <div class="gifBox"></div>
+      <div class="tribBox">
+          <h1 id="tribute">Name</h1>
+          <div class="boom"></div>
+          <div class="boom"></div>
+      </div>
+
+      <button class="close" onclick="closeCycle();">Roll</button>
+  </div>
+  <audio id="myAudio">
+      <source src="https://freesound.org/data/previews/259/259300_1038806-lq.mp3" type="audio/mp3">
+
+  </audio>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
