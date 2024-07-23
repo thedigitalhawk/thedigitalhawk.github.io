@@ -1,0 +1,397 @@
+@import url('./abstract/_normalize.css');
+@import url('./abstract/_colors.css');
+@import url('./abstract/_typography.css');
+@import url('./abstract/_animations.css');
+
+
+html,
+body {
+    margin-top: 60px;
+}
+
+.actuate.fade_in {
+    position: relative;
+    animation: fadeUp 0.4s forwards;
+}
+
+.actuate.toggleBlue {
+    background: blue;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.shrink {
+    height: 40px;
+    box-shadow: 0 4px 10px -5px rgba(0, 0, 0, .2);
+}
+
+.shrink .eagle_logo {
+    width: 40px;
+}
+
+.shrink .eagle_logo svg {
+    height: 30px;
+}
+
+header {
+    height: 60px;
+    padding: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #F4F8FB;
+    box-sizing: content-box;
+    transition: all 0.2s linear;
+}
+
+header .inner {
+    height: 100%;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    column-gap: 60px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+
+header li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+header .logo {
+    height: 100%;
+}
+
+.button_like {
+    padding: 10px 40px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 100px;
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid var(--accent-color);
+}
+
+.button_like:hover {
+    background-color: white;
+    color: var(--accent-color);
+}
+
+.call_to_action {
+    opacity: 0;
+    position: relative;
+    animation: fadeUp 0.8s 1s forwards;
+}
+
+.logo {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.logo svg {
+    height: 30px
+}
+
+.eagle_logo {
+    height: 100%;
+    width: 60px;
+    background-color: var(--accent-color);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s linear;
+}
+
+.eagle_logo svg {
+    height: 40px;
+    fill: white;
+}
+
+.hightlight {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.top_section {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 400px);
+    margin: 0 auto;
+}
+
+.top_section .left {
+    padding: 30px;
+    width: 80%;
+
+}
+
+.top_section .left h1 {
+    font-size: 90px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    opacity: 0;
+    position: relative;
+    animation: fadeUp 0.8s 0.2s forwards;
+}
+
+.top_section .left p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0;
+    position: relative;
+    animation: fadeUp 0.8s 0.6s forwards;
+}
+
+.top_section .right {
+    width: 50%;
+    flex-grow: 0;
+    display: flex;
+    align-items: stretch;
+    padding: 30px;
+    border-radius: 5px;
+    opacity: 0;
+    position: relative;
+    animation: fadeUp 0.8s 1.4s forwards;
+}
+
+.top_section .right #connection {
+    fill: #b6b6b6;
+}
+
+#led {
+    fill: rgb(0, 41, 91);
+}
+
+#ev {
+    fill: #4095D1;
+}
+
+#bolt {
+    fill: #616161;
+}
+
+#fan {
+    fill: #616161;
+}
+
+#rack {
+    fill: #DA2128;
+}
+
+
+section.main {
+    width: 100%;
+    margin-top: 60px;
+    background-color: #00295B;
+    color: white;
+
+}
+
+section .inner {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#unique {
+    background-color: initial;
+    opacity: 0;
+    position: relative;
+    animation: fadeUp 0.8s 1.8s forwards;
+}
+
+#unique h3,
+#service-inc h3,
+#scaled h3 {
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-size: 25px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+#unique ol {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+#unique ol>li {
+    width: calc(33%);
+    background: #4095D1;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#unique ol>li:nth-child(even) {
+    background: #adadad;
+}
+
+#unique ul {
+    margin: 0;
+    padding: 0;
+}
+
+#services-inc {
+    background-image: url('/Assets/steel-shelf-4074061_1920.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+
+#services-inc::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 41, 91, .65);
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+#services-inc .inner {
+    z-index: 1;
+    position: relative;
+}
+
+#services-inc ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#services-inc ol>li {
+    color: #181818;
+    width: calc(25% - 15px);
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#services-inc h2 {
+    color: white;
+}
+
+#services-inc h3 {
+    color: #DA2128;
+}
+
+
+#scaled {
+    background-color: initial;
+    color: black;
+    opacity: 0;
+}
+
+#scaled ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+#scaled ul>li {
+    width: calc(33%);
+    background: #adadad;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+}
+
+#scaled ul>li:nth-child(even) {
+    background: #4095D1;
+}
+
+.actions {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background: #00295B;
+    color: white;
+    padding: 40px;
+}
+
+
+footer .inner {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+
+/* .top_section video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.video_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    background: #d4d4d4e6;
+    height: 100vh;
+}
+
+
+.video_overlay svg{
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    fill: #1e2c4147;
+} */
+
+/* #cb0121
+#648dcd
+
+#283c58
+*/
