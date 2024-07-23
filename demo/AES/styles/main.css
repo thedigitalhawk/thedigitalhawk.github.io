@@ -21,7 +21,7 @@ body {
 }
 
 .shrink {
-    height: 40px;
+    height: 100px;
     box-shadow: 0 4px 10px -5px rgba(0, 0, 0, .2);
 }
 
@@ -34,14 +34,12 @@ body {
 }
 
 header {
-    height: 60px;
-    padding: 30px;
+    height: 120px;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 10;
     background-color: #F4F8FB;
-    box-sizing: content-box;
     transition: all 0.2s linear;
 }
 
@@ -53,6 +51,8 @@ header .inner {
     column-gap: 60px;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 30px;
+    align-items: center;
 }
 
 header ul {
@@ -73,6 +73,8 @@ header li a {
 
 header .logo {
     height: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .button_like {
@@ -118,6 +120,8 @@ header .logo {
     align-items: center;
     justify-content: center;
     transition: all 0.2s linear;
+    position: relative;
+    z-index: 10;
 }
 
 .eagle_logo svg {
@@ -262,7 +266,7 @@ h3 {
 }
 
 #services-inc {
-    background-image: url('/Assets/steel-shelf-4074061_1920.jpg');
+    background-image: url('../Assets/steel-shelf-4074061_1920.jpg');
     position: relative;
     background-size: cover;
     background-position: center;
@@ -361,37 +365,247 @@ footer .inner {
     margin: 0 auto;
 }
 
-
-
-/* .top_section video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    height: 100vh;
-    object-fit: cover;
+header #menu{
+    display: none;
 }
-
-.video_overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  
+  #menu {
+    font-size: 10px;
+    width: 3em;
+    position: relative;
+  }
+  
+  .menu-bar {
     width: 100%;
-    background: #d4d4d4e6;
-    height: 100vh;
+    height: 0.4em;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: 50% 50%;
+    position: relative;
+    transition-delay: 0.2s;
+    z-index: 10;
+  }
+  .menu-bar--middle {
+    margin: 5px 0;
+  }
+  
+  #menu input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    z-index: 11;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+  }
+  
+  .menu-bar--inner {
+    width: 100%;
+    height: 100%;
+    background: #F4F8FB;
+    filter: invert(1) saturate(0) contrast(100);
+    opacity: 0.9;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 3px;
+  }
+  #menu input:hover ~ .menu-bar .menu-bar--inner {
+    opacity: 1;
+  }
+  
+  #menu input:checked ~ .menu-bar--top {
+    transition-delay: 0s;
+    transform: translateY(0.9em);
+  }
+  #menu input:checked ~ .menu-bar--top .menu-bar--inner {
+    transition-delay: 0.2s;
+    transform: rotate(-45deg);
+  }
+  
+  #menu input:checked ~ .menu-bar--middle {
+    transition-delay: 0s;
+  }
+  
+  #menu input:checked ~ .menu-bar--middle .menu-bar--inner {
+    transition-delay: 0.2s;
+    transform: rotate(45deg);
+  }
+  
+  #menu input:checked ~ .menu-bar--bottom {
+    transition-delay: 0s;
+    transform: translateY(-0.9em);
+  }
+  #menu input:checked ~ .menu-bar--bottom .menu-bar--inner {
+    transition-delay: 0.2s;
+    transform: rotate(45deg);
+  }
+  
+  
+  #menu input:checked ~ nav{
+    right: 0;
+  }
+
+
+
+@media screen and (max-width: 1300px) {
+    .top_section .left {
+        width: 60%;
+    }
+
+    .top_section .left h1 {
+        font-size: 60px;
+    }
+
+    .top_section .left p {
+        font-size: 16px;
+    }
 }
 
+@media screen and (max-width: 1024px) {
+    .top_section {
+        flex-direction: column;
+        height: 500px;
+    }
 
-.video_overlay svg{
-    height: 80%;
-    position: absolute;
-    right: 30px;
-    fill: #1e2c4147;
-} */
+    .top_section .left {
+        width: 100%;
+    }
 
-/* #cb0121
-#648dcd
+    .top_section .right {
+        display: none;
+    }
 
-#283c58
-*/
+    /* .top_section .left h1{
+        font-size: 60px;
+    }
+    .top_section .left p{
+        font-size: 16px;
+    } */
+    #services-inc ol>li {
+        width: calc(33% - 12px);
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header #menu{
+        display: block;
+    }
+
+    #menu nav {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        background: white;
+        box-shadow: 0 4px 10px -5px rgba(0, 0, 0, .2);
+        padding: 120px 30px;
+        z-index: 9;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #menu nav ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #menu nav li {
+        width: 100%;
+    }
+
+    #menu nav ul li a{
+        height: 60px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #unique ol {
+        flex-direction: column;
+    }
+
+    #unique ol>li {
+        width: 100%;
+    }
+
+    #services-inc ol>li {
+        width: calc(50% - 15px);
+    }
+
+    #scaled ul {
+        flex-direction: column;
+    }
+
+    #scaled ul>li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #services-inc ol {
+        flex-direction: column;
+    }
+
+    #services-inc ol>li {
+        width: 100%;
+        aspect-ratio: auto;
+    }
+    header{
+        height: 80px;
+    }
+    header .inner{
+        padding: 0 30px;
+    }
+    .eagle_logo{
+        height: 50px;
+        width: 50px;
+    }
+    .shrink{
+        height: 80px;
+    }
+
+    .shrink .eagle_logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .shrink .eagle_logo svg{
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .top_section {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .top_section .left {
+        width: 100%;
+    }
+
+    .top_section .right {
+        display: none;
+    }
+
+    .top_section .left h1{
+        font-size: 40px;
+        line-height: 1.6;
+    }
+    .top_section .left p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+}
