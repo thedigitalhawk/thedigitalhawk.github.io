@@ -66,22 +66,14 @@ h2{
     margin-bottom: 40px;
 }
 
-li{
-    font-weight: 800;
-    line-height: 2;
-    margin-bottom: 10px;
-}
-
-li li{
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.page_top_about{
-    background-image: url('/Assets/store-5619201_1920.jpg');
-}
-
-.page_top_services{
-    background-image: url('/Assets/factory-8858790_1920.png');
+@media screen and (max-width: 870px) {
+    #page-top h1{
+        font-size: 46px;
+    }
+    #page-top{
+        height: 400px;
+    }
+    #page-top .inner{
+        padding: 0 30px;
+    }
 }
