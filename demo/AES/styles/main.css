@@ -200,11 +200,11 @@ header .logo {
     padding-bottom: 60px;
     background-size: 100% 100%;
     background-position: 0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(75% 75% at 20% 45%, #00295B1A 0%, #FFFFFF00 100%),radial-gradient(75% 75% at 81% 47%, #DA212836 0%, #FFFFFF00 99%),radial-gradient(75% 75% at 97% 66%, #4095D14A 1%, #FFFFFF00 100%);
+    background-image: radial-gradient(75% 75% at 20% 45%, #00295B1A 0%, #FFFFFF00 100%),radial-gradient(75% 75% at 97% 66%, #4095D14A 1%, #FFFFFF00 100%);
     margin: 0 auto;
 }
 
-.slogan{
+.slogan {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
@@ -551,10 +551,10 @@ header #menu {
     right: 0;
 }
 
-section .inner{
+section .inner {
     width: 100%;
     max-width: 1300px;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 0px 30px 60px 30px;
 }
 
@@ -698,6 +698,7 @@ section .inner{
     .top_section .left h1 {
         font-size: 50px;
     }
+
     h2 {
         font-size: 30px;
     }
