@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American Eagle Solutions</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../../favicons/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +17,17 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/page.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <script src="scripts/wayfinder.js"></script>
-    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/page.css">
+    <link rel="stylesheet" href="../../styles/services.css">
+    <script src="../../scripts/wayfinder.js"></script>
+    <script src="../../scripts/main.js"></script>
 </head>
 
 <body>
     <header>
         <div class="inner">
-            <a href="index.html" class="logo">
+            <a href="../../" class="logo">
                 <div class="eagle_logo">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg id="eagle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396.82 455.01">
@@ -54,19 +54,26 @@
                         points="347.83 159.78 347.83 131.16 477.09 131.16 514.53 83.37 347.83 83.37 347.83 58.2 484.01 58.2 526.16 3.47 468.58 3.47 463.86 3.47 433.63 3.47 428.61 3.47 410.13 3.47 282.41 3.47 282.41 95.26 366.55 213.88 484.95 213.88 526.79 159.78 347.83 159.78" />
                 </svg>
             </a>
-            <nav>
+            <nav class="desktop">
                 <ul>
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="../../about/">About Us</a>
                     </li>
+                    <li><a href="#">Services</a>
+                        <ul class="dropdown">
+                          <li><a href="../../services/warehouse-standup/">Warehouse Standup</a></li>
+                          <li><a href="../../services/warehouse-maintenance/">Warehouse Maintenance</a></li>
+                          <li><a href="../../services/electrical-infrastructure/">Electrical Infrastructure</a></li>
+                          <li><a href="../../services/ev-charging/">EV Charging</a></li>
+                          <li><a href="../../services/led-retrofits/">LED Retrofits</a></li>
+                        </ul>
+                      </li>
                     <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="../../contact/">Contact Us</a>
                     </li>
                 </ul>
             </nav>
+
             <div id="menu">
                 <input type="checkbox" name="menu-btn" />
                 <div class="menu-bar menu-bar--top">
@@ -82,151 +89,96 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="../../">Home</a>
                         </li>
                         <li>
-                            <a href="about.html">About Us</a>
+                            <a href="../../about/">About Us</a>
                         </li>
                         <li>
-                            <a href="services.html">Services</a>
+                            <a href="#">Services</a>
+                            <ul>
+                                <li><a href="../../services/warehouse-standup/">Warehouse Standup</a></li>
+                                <li><a href="../../services/warehouse-maintenance/">Warehouse Maintenance</a></li>
+                                <li><a href="../../services/electrical-infrastructure/">Electrical Infrastructure</a></li>
+                                <li><a href="../../services/ev-charging/">EV Charging</a></li>
+                                <li><a href="../../ervices/led-retrofits/">LED Retrofits</a></li>
+                              </ul>
                         </li>
                         <li>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="../../contact/">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
-    <div id="page-top" class="page_top_about">
+    <div id="page-top" class="page_top_ws">
         <div class="inner">
-            <h1>About AES</h1>
+            <h1>Warehouse Standup</h1>
             <p class="qoute">
-                Offering a unique combination of expertise in bundled energy efficiency programs and warehouse solutions
+                A successful warehouse standup involves a holistic approach that addresses physical infrastructure,
+                    technology, safety, and human factors to create a well-functioning and efficient operational
+                    environment.
             </p>
         </div>
     </div>
-
-
-    <section id="aboutAES">
+    <section id="whstandup">
         <div class="inner">
-            <h2>We're Different</h2>
-            <p>
-                AES distinguishes itself by offering a unique combination of expertise in bundled energy efficiency
-                programs and warehouse solutions. Our proven resume of working with global building owners, efficient
-                project execution, and the ability to scale with precision further solidifies our position as a trusted
-                turnkey integrator for the world's largest customers. Our collaborative and client-focused approach
-                ensures that we add value where it matters most, building lasting trust with our clients.
-            </p>
-        </div>
-    </section>
-
-    <section id="history">
-        <div class="inner">
-            <h2 class="subhead">Our History</h2>
-            <p>
-                The history of AES showcases the company's evolution and success from the energy services industry,
-                particularly in the areas of LED retrofit programs and large-scale projects, to a premier warehouse
-                solution integrator. Here is a timeline of key milestones in AES's history:
-            </p>
-
-            <h4> 2016: Company Foundation</h4>
-            <ul>
-                <li>AES was founded in Hazleton, Pennsylvania, as an Energy Services Contractor.
-                </li>
-                <li>The company's initial focus was on reducing carbon footprints by implementing LED retrofit
-                    programs for larger industrial and commercial customers.
-                </li>
-            </ul>
-
-
-            <h4> 2018: Preferred Partner for World's Largest Lighting Retrofit Program</h4>
-            <ul>
-                <li>In 2018, AES achieved a significant milestone by becoming the preferred partner for the largest
-                    lighting retrofit program in the world.
-                </li>
-                <li>AES became the sole program partner for lighting and electrical services in facilities exceeding
-                    50,000 square feet, indicating its leadership in providing turnkey solutions for larger facilities.
-                </li>
-                <li>The company played a central role in program management, sales, utility incentive capture,
-                    implementation, and program maintenance.
-                </li>
-                <li>This accomplishment positioned AES as a key player in the global lighting retrofit landscape and
-                    showcased its expertise in managing large-scale energy efficiency initiatives.
-                </li>
-            </ul>
-
-            <h4> 2022: Diversification and Standup Evolution</h4>
-            <ul>
-                <li>Building on its success in lighting services, AES expanded its scope beyond lighting.
-                </li>
-                <li>The company began working closely with building owners and tenants to complete large, time-
-                    sensitive standup scopes.
-                </li>
-                <li>The focus was on ensuring consistent go-live dates, demonstrating AES's commitment to
-                    meeting project timelines.
-                </li>
-            </ul>
-
-            <h4>Present Day: Leading in Turnkey Solutions</h4>
-            <ul>
-                <li>Today, AES stands as a leading turnkey integrator in the energy services industry.
-                </li>
-                <li>The company's expertise spans lighting and electrical services, with a particular emphasis on
-                    delivering efficient solutions for facilities over 50,000 square feet.
-                </li>
-                <li>AES's achievements reflect a commitment to innovation, sustainability, and a customer-centric
-                    approach in addressing the evolving needs of industrial and commercial clients.
-                </li>
-            </ul>
-            <p>
-                Overall, the history of AES showcases a trajectory of growth, specialization, and adaptability,
-                positioning
-                the company as a trusted partner in delivering comprehensive energy solutions to its clients.
-            </p>
-
-        </div>
-    </section>
-
-    <section id="culture">
-        <div class="inner">
-            <h2 class="subhead">Our Culture</h2>
-            <p>
-                AES has established a culture of trust by consistently prioritizing the needs, goals, and timelines of
-                its
-                customers, demonstrating a commitment to client-centric values and fostering long-lasting relationships
-                based on reliability and customer satisfaction. Our company pillars include:
-            </p>
-
+            <div class="top_content">
+                <h2>
+                    Here's an overview of
+                    AES's
+                    Warehouse Standup Program:
+                </h2>
+            </div>
             <ol>
-
-                <li>Customer Focus: Prioritizing the needs and concerns of customers is at the core of AES values.
-                    We strive to always pick up our chair and sit on your side of the table as a trusted partner.
+                <li>Needs Assessment:
+                    <ul>
+                        <li>Determine the specific functions and processes that the warehouse must support.</li>
+                    </ul>
                 </li>
-                <li>Reliability: Customers can depend on AES to fulfill commitments and responsibilities. We strive
-                    for accountability, allowing customers to trust that their AES teammates will deliver on our
-                    promises.
+                <li>Infrastructure:
+                    <ul>
+                        <li>Implement and route the proper electrical infrastructure to meet the warehouse needs.</li>
+                        <li>Install proper lighting to meet safety standards and operational needs.</li>
+                    </ul>
                 </li>
-                <li>Transparency: AES operates with openness and honesty. Decisions, processes, and information
-                    are shared in a clear and straightforward manner, reducing ambiguity.
+                <li>Racking and Storage Systems:
+                    <ul>
+                        <li>Design and install racking systems to optimize vertical and horizontal storage space.</li>
+                    </ul>
                 </li>
-                <li>Consistency: Trust is built over time through consistent actions and behaviors. AES strives for a
-                    sustained culture of trust by consistently demonstrating reliability, integrity, and transparency.
+                <li>Material Handling Equipment:
+                    <ul>
+                        <li>Acquire and install forklifts, pallet jacks, and other material handling equipment.</li>
+                    </ul>
                 </li>
-                <li>Support: Customers and partners feel supported by their AES teammates. There is a willingness
-                    to help each other succeed, fostering a collaborative and cohesive environment.
+                <li>Safety Measures:
+                    <ul>
+                        <li>
+                            Install safety features such as guardrails, bollards, and safety barriers to protect workers
+                            and assets.
+                        </li>
+                        <li>Provide training on safety protocols and emergency procedures.
+                        </li>
+                    </ul>
                 </li>
-                <li>Problem Solving: Rather than placing blame, AES takes accountability in solving the problem
-                    first. Conflicts are addressed openly and constructively with customers and partners.
+                <li>Dock Equipment:
+                    <ul>
+                        <li>Set up loading docks with appropriate levelers, dock lights, and signals.</li>
+                    </ul>
                 </li>
-                <li>Adaptability: AES strives for a culture of tr embraces adaptability and openness to change. Team
-                    members trust that the organization can navigate challenges and evolve successfully.
+                <li>Fire Suppression Systems:
+                    <ul>
+                        <li>Install fire suppression systems, including sprinklers and alarms, to protect against fire
+                            hazards.
+                        </li>
+                    </ul>
                 </li>
             </ol>
         </div>
-    </section>
 
+    </section>
     <footer>
         <div class="inner">
             <p>Copyright © 2024 American Eagle Solutions - All Rights Reserved.</p>
@@ -239,5 +191,4 @@
         </div>
     </footer>
 </body>
-
 </html>

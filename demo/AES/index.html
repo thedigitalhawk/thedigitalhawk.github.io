@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American Eagle Solutions</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,16 +54,22 @@
                 </svg>
             </a>
 
-            <nav>
+            <nav class="desktop">
                 <ul>
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="about/">About Us</a>
                     </li>
+                    <li><a href="#">Services</a>
+                        <ul class="dropdown">
+                          <li><a href="services/warehouse-standup/">Warehouse Standup</a></li>
+                          <li><a href="services/warehouse-maintenance/">Warehouse Maintenance</a></li>
+                          <li><a href="services/electrical-infrastructure/">Electrical Infrastructure</a></li>
+                          <li><a href="services/ev-charging/">EV Charging</a></li>
+                          <li><a href="services/led-retrofits/">LED Retrofits</a></li>
+                        </ul>
+                      </li>
                     <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact/">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -86,13 +92,20 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="about.html">About Us</a>
+                            <a href="about/">About Us</a>
                         </li>
                         <li>
-                            <a href="services.html">Services</a>
+                            <a href="services/">Services</a>
+                            <ul>
+                                <li><a href="services/warehouse-standup/">Warehouse Standup</a></li>
+                                <li><a href="services/warehouse-maintenance/">Warehouse Maintenance</a></li>
+                                <li><a href="services/electrical-infrastructure/">Electrical Infrastructure</a></li>
+                                <li><a href="services/ev-charging/">EV Charging</a></li>
+                                <li><a href="services/led-retrofits/">LED Retrofits</a></li>
+                              </ul>
                         </li>
                         <li>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="contact/">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -108,7 +121,7 @@
                     solutions for
                     warehouse standup, efficiency upgrades, EV charging, maintenance programs, and more.</b>
             </p>
-            <a class="button_like call_to_action" href="services.html">Explore Our Services</a>
+            <a class="button_like call_to_action" href="#services-inc">Explore Our Services</a>
 
         </div>
         <div class="right">
@@ -275,12 +288,13 @@
             <h2>Our Services Include</h2>
             <ol>
                 <li>
-                    <h3>Racking:</h3> Implementing strategic racking solutions to maximize storage efficiency.
-                </li>
+                    <h3>Warehouse Standup:</h3> Holistic warehouse startup solution that can encompass a blend of our traditional services with additional ancillary offerings such as racking, forklifts, conveyors, generators, dock equipment and fire suppression systems.
+                    <a class="info_button" href="services/">Learn More</a></li>
                 <li>
                     <h3>Electrical Infrastructure:</h3> Ensuring proper power for all equipment, such as forklift
                     chargers,
                     conveyer systems, lighting, and generators.
+                    <a class="info_button" href="services/">Learn More</a>
                 </li>
                 <li>
                     <h3>Generators:</h3> Providing reliable power solutions for uninterrupted operations.
@@ -288,39 +302,23 @@
                 <li>
                     <h3>LED Lighting:</h3> Optimizing light levels and electrical use with energy-efficient LED
                     lighting.
+                    <a class="info_button" href="services/">Learn More</a>
                 </li>
                 <li>
                     <h3>Egress Lighting:</h3> Meeting NFPA and local codes with proper egress lighting and exit signage.
                 </li>
                 <li>
-                    <h3>Forklifts:</h3> Collaborating with national partners to own or lease forklift fleets.
-                </li>
-                <li>
-                    <h3>Conveyors:</h3> Implementing efficient conveyor systems for streamlined processes.
-                </li>
-                <li>
-                    <h3>Dock Door Equipment:</h3> Offering levelers, dock lights, and dock signals for seamless
-                    operations.
-                </li>
-                <li>
-                    <h3>Permitting:</h3> Handling all required permits to ensure compliance.
-                </li>
-                <li>
-                    <h3>Fire Suppression:</h3> Implementing effective fire suppression systems for safety.
-                </li>
-                <li>
                     <h3>EV Charging:</h3> Expert Electric Vehicle (EV) charging installation services, addressing the
                     growing
                     need for sustainable and efficient transportation infrastructure.
+                    <a class="info_button" href="services/">Learn More</a>
                 </li>
                 <li>
                     <h3>Warehouse Maintenance:</h3> Comprehensive Warehouse Maintenance Program to ensure the
                     ongoing functionality, safety, and efficiency of commercial and industrial warehouse facilities.
+                    <a class="info_button" href="services/">Learn More</a>
                 </li>
             </ol>
-            <div class="actions">
-                <a class="button_like" href="services.html">Our Services</a>
-            </div>
         </div>
     </section>
 
@@ -339,7 +337,7 @@
                     country.
                 </li>
                 <li>
-                    <h3>Collaboration with Authorities Having Jurisdiction (AHJ):</h3> We collaborate closely with
+                    <h3>Local Building Departments:</h3> We collaborate closely with
                     Authorities
                     Having Jurisdiction to ensure compliance with regulations. This includes filing all required
                     permits and sourcing the right installation resources to meet project timelines.

@@ -199,8 +199,8 @@ header .logo {
     padding-top: 120px;
     padding-bottom: 60px;
     background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(75% 75% at 20% 45%, #00295B1A 0%, #FFFFFF00 100%),radial-gradient(75% 75% at 97% 66%, #4095D14A 1%, #FFFFFF00 100%);
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(75% 75% at 20% 45%, #00295B1A 0%, #FFFFFF00 100%), radial-gradient(75% 75% at 97% 66%, #4095D14A 1%, #FFFFFF00 100%);
     margin: 0 auto;
 }
 
@@ -293,7 +293,7 @@ section .inner {
 }
 
 #unique {
-    background-image: url('../Assets/industrial-hall-1630742_1920.jpg');
+    background-image: url('../assets/industrial-hall-1630742_1920.jpg');
     position: relative;
     background-size: cover;
     background-position: center;
@@ -356,7 +356,7 @@ h3 {
 }
 
 #services-inc {
-    background-image: url('../Assets/steel-shelf-4074061_1920.jpg');
+    background-image: url('../assets/steel-shelf-4074061_1920.jpg');
     position: relative;
     background-size: cover;
     background-position: center;
@@ -396,6 +396,24 @@ h3 {
     background: #ffffff;
     padding: 30px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info_button {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #181818;
+    border: 2px solid #e2e2e2;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.info_button:hover {
+    border: 2px solid #181818;
 }
 
 #services-inc h2 {
@@ -551,11 +569,75 @@ header #menu {
     right: 0;
 }
 
+#menu ul li ul{
+    padding-left: 40px;
+}
+
 section .inner {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0px 30px 60px 30px;
+}
+
+nav.desktop li {
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    white-space: nowrap;
+}
+
+nav.desktop li a {
+    color: #747474;
+}
+
+nav.desktop li:hover {
+    cursor: pointer;
+}
+
+/* nav.desktop li:hover>a::after {
+    content: '';
+    width: 90%;
+    height: 4px;
+    border-radius: 4px;
+    background: #181818;
+    position: absolute;
+    left: 5%;
+    bottom: 8px;
+} */
+
+
+nav.desktop li:hover>a {
+    color: #181818;
+}
+
+nav.desktop ul li ul {
+    background-color: #F4F8FB;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 7rem;
+    position: absolute;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    padding: 0;
+    height: fit-content;
+    box-shadow: 0 4px 10px -5px rgba(0, 0, 0, .2);
+}
+
+nav.desktop ul li:hover>ul,
+nav.desktop ul li:focus-within>ul,
+nav.desktop ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    width: 100%;
 }
 
 

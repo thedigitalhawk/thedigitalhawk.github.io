@@ -1,0 +1,26 @@
+ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li ul{
+    list-style: disc;
+}
+
+ul > li {
+font-weight: 700;
+line-height: 2;
+}
+
+ul > li > ul > li{
+    font-weight: 400;
+}
+
+.main{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.page_top_ei{
+    background-image: url('../assets/wires-7997980_1920.jpg');
+}

@@ -1,6 +1,20 @@
-.page_top_services{
-    background-image: url('../Assets/factory-8858790_1920.png');
+.page_top_ev{
+    background-image: url('../assets/warehouse-8913600_1280.png');
 }
+
+.page_top_lr{
+    background-image: url('../assets/high-tech-warehouse-8889173_1920.jpg');
+}
+
+.page_top_wm{
+    background-image: url('../assets/factory-8858790_1920.png');
+}
+
+.page_top_ws{
+    background-image: url('../assets/ai-generated-8917828_1920.jpg');
+}
+
+
 
 li{
     font-weight: 800;
